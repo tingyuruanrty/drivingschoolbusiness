@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BigNi</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <style>
+      header {
+        display: flex;
+        align-items: center;
+      }
+      /* i want the size for logo of my company stay fixed no matter how people
+      scale the window, how wide their screen are */
+      .companylogo {
+        width: 100px;
+        align-self: flex-start;
+      }
+      nav {
+        width: 80vw;
+      }
+
+      .navigationbar,
+      .contactmeans {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+      }
+
+      .navigationbar{
+        flex-wrap: wrap;
+      }
+
+      .navigationbutton,
+      .contactbutton {
+        margin: 10px;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      main {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+      }
+
+      p {
+        font-size: xx-large;
+        align-self: center;
+        position: relative;
+        bottom: 5vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="companylogo" src="images/companylogoplaceholder.png" alt="" />
+      <nav>
+        <ul class="navigationbar">
+          <li class="navigationbutton"><a href="#" class="link">home</a></li>
+          <li class="navigationbutton"><a href="" class="link">pricing</a></li>
+          <li class="navigationbutton">
+            <a href="" class="link">dmv san mateo</a>
+          </li>
+          <li class="navigationbutton"><a href="" class="link">redwook</a></li>
+          <li class="navigationbutton"><a href="" class="link">faq</a></li>
+          <li class="navigationbutton"><a href="" class="link">contact</a></li>
+          <li class="navigationbutton"><a href="" class="link">join us</a></li>
+          <li class="navigationbutton">
+            <a href="" class="link">place holder</a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <ul class="contactmeans">
+          <li class="contactbutton">
+            <a href=""><img src="images/envelope.svg" alt="" /></a>
+          </li>
+          <li class="contactbutton">
+            <a href=""><img src="images/phone-call.svg" alt="" /></a>
+          </li>
+          <li class="contactbutton">
+            <a href=""><img src="images/wechat-logo.svg" alt="" /></a>
+          </li>
+          <li class="contactbutton">
+            <a href=""><img src="images/whatsapp-logo.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main><p>sorry, website still in construction</p></main>
+    <footer></footer>
+  </body>
+</html>
