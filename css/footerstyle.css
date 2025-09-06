@@ -1,0 +1,15 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background-color: antiquewhite;
+}
+
+.footercontainer, .footercontainer2 {
+    width: 25%;
+}
+
+.footercontainer2 {
+    display: flex;
+    justify-content: space-around;
+}

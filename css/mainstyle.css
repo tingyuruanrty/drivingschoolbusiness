@@ -1,0 +1,13 @@
+main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color:floralwhite;
+        padding-top: 5%;
+        padding-bottom: 5%;
+      }
+
+.maincontainer {
+  width: 50%;
+}
