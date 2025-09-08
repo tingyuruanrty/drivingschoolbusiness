@@ -14,6 +14,24 @@
       }
       main {
         padding-top: 0;
+        position: relative;
+      }
+      .horizontalbarabovevideo {
+        width: 100%;
+        background: #a4dcb3;
+        background: linear-gradient(
+          6deg,
+          rgba(164, 220, 179, 1) 0%,
+          rgba(239, 234, 221, 1) 96%
+        );
+        display: flex;
+        justify-content: center;
+      }
+      /* HTML: <div class="parallelogram"></div> */
+      .bigbluebutton {
+        background-color: tomato;
+        width: 50px;
+        height: 50px;
       }
     </style>
   </head>
@@ -68,7 +86,11 @@
       </div>
     </header>
     <main>
+      <div class="horizontalbarabovevideo">
+        <p>Bring a classmate, save $30 — bring more, save more.</p>
+      </div>
       <video src="video/homepagehero.mp4" autoplay muted loop></video>
+      <div class="bigbluebutton"></div>
     </main>
     <footer>
       <div>
