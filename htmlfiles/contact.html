@@ -13,6 +13,18 @@
         width: 60%;
         float: right;
       }
+
+      :target {
+        transition: background-color 1s ease;
+        background-color: yellow;
+      }
+
+      @media (max-width: 1000px) {
+        .contactimage {
+          width: 100%;
+          float: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -30,7 +42,9 @@
             <a href="../index.html#" class="link">Home</a>
           </li>
           <li class="navigationbutton">
-            <a href="../htmlfiles/testlocations.html" class="link">Test Locations</a>
+            <a href="../htmlfiles/testlocations.html" class="link"
+              >Test Locations</a
+            >
           </li>
           <li class="navigationbutton">
             <a href="../htmlfiles/contact.html" class="link">Contact Us</a>
@@ -41,22 +55,32 @@
           <li class="navigationbutton">
             <a href="" class="link">FAQ</a>
           </li>
-          <li class="navigationbutton"><a href="" class="link">testimonial</a></li>
+          <li class="navigationbutton">
+            <a href="" class="link">testimonial</a>
+          </li>
         </ul>
       </nav>
       <div class="contactmeans">
         <ul class="listOfContactMeans">
           <li class="contactbutton">
-            <a href=""><img src="../images/envelope.svg" alt="" /></a>
+            <a href="../htmlfiles/contact.html#email"
+              ><img src="../images/envelope.svg" alt=""
+            /></a>
           </li>
           <li class="contactbutton">
-            <a href=""><img src="../images/phone-call.svg" alt="" /></a>
+            <a href="../htmlfiles/contact.html#phone"
+              ><img src="../images/phone-call.svg" alt=""
+            /></a>
           </li>
           <li class="contactbutton">
-            <a href=""><img src="../images/wechat-logo.svg" alt="" /></a>
+            <a href="../htmlfiles/contact.html#wechat"
+              ><img src="../images/wechat-logo.svg" alt=""
+            /></a>
           </li>
           <li class="contactbutton">
-            <a href=""><img src="../images/whatsapp-logo.svg" alt="" /></a>
+            <a href="../htmlfiles/contact.html#whatsapp"
+              ><img src="../images/whatsapp-logo.svg" alt=""
+            /></a>
           </li>
         </ul>
       </div>
@@ -68,20 +92,21 @@
           src="../images/d39449ac-0cab-4259-b508-208dd3bc198f~1.jpg"
           alt=""
         />
+        <h1>if you have any question, please contact me</h1>
         <div>
-          <h2 id="email">our email</h2>
-          <p>tingyuruanrty@gmail.com</p>
+          <h2 id="phone">text me or call me (perfered)</h2>
+          <p>6196578413</p>
         </div>
         <div>
-          <h2 id="phone">text me or call me</h2>
-          <p>6196578413</p>
+          <h2 id="email">my email</h2>
+          <p>jackniweiguo@gmail.com</p>
         </div>
         <div>
           <h2 id="wechat">my wechat</h2>
           <p>niweiguoweixin</p>
         </div>
         <div>
-          <h2 id="whats app">email</h2>
+          <h2 id="whatsapp">whatsapp</h2>
           <p>same to phone number</p>
         </div>
       </div>
