@@ -8,7 +8,23 @@
     <link rel="stylesheet" href="../css/headerstyle.css" />
     <link rel="stylesheet" href="../css/mainstyle.css" />
     <link rel="stylesheet" href="../css/footerstyle.css" />
-    <style></style>
+    <style>
+      .testimonialgridcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 60%;
+        justify-items: center;
+        align-items: center;
+      }
+      .photocontainer {
+        width: 100%;
+      }
+      .groupphoto {
+        width: 20vw;
+        object-fit: contain;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -25,7 +41,9 @@
             <a href="../index.html#" class="link">Home</a>
           </li>
           <li class="navigationbutton">
-            <a href="../htmlfiles/testlocations.html" class="link">Test Locations</a>
+            <a href="../htmlfiles/testlocations.html" class="link"
+              >Test Locations</a
+            >
           </li>
           <li class="navigationbutton">
             <a href="../htmlfiles/contact.html" class="link">Contact Us</a>
@@ -34,9 +52,11 @@
             <a href="../htmlfiles/pricing.html" class="link">Pricing</a>
           </li>
           <li class="navigationbutton">
-            <a href="" class="link">FAQ</a>
+            <a href="../htmlfiles/faq.html" class="link">FAQ</a>
           </li>
-          <li class="navigationbutton"><a href="" class="link">testimonial</a></li>
+          <li class="navigationbutton">
+            <a href="../htmlfiles/testimonial.html" class="link">testimonial</a>
+          </li>
         </ul>
       </nav>
       <div class="contactmeans">
@@ -65,7 +85,24 @@
       </div>
     </header>
     <main>
-      <p>routemap for sanmateo</p>
+      <div class="maincontainer testimonialgridcontainer">
+        <div class="photocontainer">
+          <img src="../images/1000044414.jpg" alt="" class="groupphoto" />
+        </div>
+        <div class="photocontainer">
+          <img src="../images/1000044415.jpg" alt="" class="groupphoto" />
+        </div>
+        <div class="photocontainer">
+          <img src="../images/1000044416.jpg" alt="" class="groupphoto" />
+        </div>
+        <div class="photocontainer">
+          <img src="../images/1000044417.jpg" alt="" class="groupphoto" />
+        </div>
+        
+        <div class="photocontainer">
+          <img src="../images/1000044419.jpg" alt="" class="groupphoto" />
+        </div>
+      </div>
     </main>
     <footer>
       <div>
