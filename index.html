@@ -48,13 +48,23 @@
         grid-column: 1/3;
       }
       .herolink {
-        width: 30%;
+        width: 50%;
         grid-row: 1/2;
         grid-column: 2/3;
         z-index: 3;
+        font-size: xx-large;
       }
       .herolinkimg {
         width: 100%;
+      }
+
+      @media(max-width: 715px){
+        .tintlayer{
+          height: 70%;
+        }
+        .herolink{
+          font-size: x-large;
+        }
       }
     </style>
   </head>
@@ -71,6 +81,9 @@
         <ul class="navigationbar">
           <li class="navigationbutton">
             <a href="index.html#" class="link">Home</a>
+          </li>
+          <li class="navigationbutton">
+            <a href="index.html#" class="link">Preparation</a>
           </li>
           <li class="navigationbutton">
             <a href="htmlfiles/testlocations.html" class="link"
@@ -147,8 +160,8 @@
           <p>address go here</p>
         </div>
         <div>
-          <h2>contact</h2>
-          <p>contact info go here</p>
+          <h2>contact us</h2>
+          <p>(650)346-7947</p>
         </div>
       </div>
     </footer>

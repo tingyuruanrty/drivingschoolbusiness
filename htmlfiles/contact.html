@@ -9,9 +9,15 @@
     <link rel="stylesheet" href="../css/mainstyle.css" />
     <link rel="stylesheet" href="../css/footerstyle.css" />
     <style>
+      .maincontainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
       .contactimage {
         width: 60%;
-        float: right;
+        margin: 30px;
       }
 
       :target {
@@ -20,6 +26,9 @@
       }
 
       @media (max-width: 1000px) {
+        .maincontainer {
+          flex-direction: column;
+        }
         .contactimage {
           width: 100%;
           float: none;
@@ -40,6 +49,9 @@
         <ul class="navigationbar">
           <li class="navigationbutton">
             <a href="../index.html#" class="link">Home</a>
+          </li>
+          <li class="navigationbutton">
+            <a href="../index.html#" class="link">Preparation</a>
           </li>
           <li class="navigationbutton">
             <a href="../htmlfiles/testlocations.html" class="link"
@@ -73,7 +85,7 @@
               ><img src="../images/envelope.svg" alt=""
             /></a>
           </li>
-          
+
           <li class="contactbutton">
             <a href="../htmlfiles/contact.html#wechat"
               ><img src="../images/wechat-logo.svg" alt=""
@@ -89,29 +101,31 @@
     </header>
     <main>
       <div class="maincontainer">
+        <div>
+          <h1>if you have any question, please contact me</h1>
+          <div>
+            <h2 id="phone">text me or call me (perfered)</h2>
+            <p>(650)346-7947</p>
+          </div>
+          <div>
+            <h2 id="email">my email</h2>
+            <p>yiningwangwyn123@gmail.com</p>
+          </div>
+          <div>
+            <h2 id="wechat">my wechat</h2>
+            <p>niweiguoweixin</p>
+            <img src="../images/wechatqrcode.png" alt="" />
+          </div>
+          <div>
+            <h2 id="whatsapp">whatsapp</h2>
+            <p>same to phone number</p>
+          </div>
+        </div>
         <img
           class="contactimage"
           src="../images/d39449ac-0cab-4259-b508-208dd3bc198f~1.jpg"
           alt=""
         />
-        <h1>if you have any question, please contact me</h1>
-        <div>
-          <h2 id="phone">text me or call me (perfered)</h2>
-          <p>(650)346-7947</p>
-        </div>
-        <div>
-          <h2 id="email">my email</h2>
-          <p>yiningwangwyn123@gmail.com</p>
-        </div>
-        <div>
-          <h2 id="wechat">my wechat</h2>
-          <p>niweiguoweixin</p>
-          <img src="../images/wechatqrcode.png" alt="">
-        </div>
-        <div>
-          <h2 id="whatsapp">whatsapp</h2>
-          <p>same to phone number</p>
-        </div>
       </div>
     </main>
     <footer>
@@ -125,8 +139,8 @@
           <p>address go here</p>
         </div>
         <div>
-          <h2>contact</h2>
-          <p>contact info go here</p>
+          <h2>contact us</h2>
+          <p>(650)346-7947</p>
         </div>
       </div>
     </footer>
