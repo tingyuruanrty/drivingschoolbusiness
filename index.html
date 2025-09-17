@@ -35,6 +35,7 @@
       align-items: center;
       justify-items: center;
       width: 100%;
+      
     }
 
     .tintlayer {
@@ -85,7 +86,11 @@
       grid-column: 3/5;
     }
 
-    
+    .commentsforpic {
+      font-size: larger;
+      text-align: center;
+    }
+
 
     @media(max-width: 715px) {
       .tintlayer {
@@ -95,6 +100,34 @@
       .herolink {
         font-size: x-large;
       }
+
+      .testimonialgrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 40vw 40vw;
+        width: 80%;
+      }
+
+      .homepagegridpic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+      #firsttwocell {
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+
+      #secondtwocell {
+        grid-column: 1/3;
+        grid-row: 3/4;
+      }
+
+      .herolink {
+        font-size: larger;
+      }
+
     }
   </style>
 </head>
@@ -158,8 +191,9 @@
       </a>
     </div>
     <p>video filmed around San Mateo DMV</p>
-    <p>in the past two years, we have helped hundreds of people get their california driving licence successfully</p>
-    <p>The smiles on their faces are the best proof of our excellent service quality.</p>
+    <p class="commentsforpic">in the past two years, we have helped hundreds of people get their california driving
+      licence successfully</p>
+    <p class="commentsforpic">The smiles on their faces are the best proof of our excellent service quality.</p>
     <div class="testimonialgrid">
       <img src="images/homepagegridpic1.jpg" alt="" class="homepagegridpic">
       <img src="images/homepagegridpic2.jpg" alt="" class="homepagegridpic">
