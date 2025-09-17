@@ -1,166 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weiguo's Driving School</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/headerstyle.css" />
-    <link rel="stylesheet" href="css/mainstyle.css" />
-    <link rel="stylesheet" href="css/footerstyle.css" />
-    <style>
-      video {
-        width: 100%;
-      }
-      main {
-        padding-top: 0;
-      }
-      .horizontalbarabovevideo {
-        width: 100%;
-        background: #a4dcb3;
-        background: linear-gradient(
-          6deg,
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weiguo's Driving School</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/headerstyle.css" />
+  <link rel="stylesheet" href="css/mainstyle.css" />
+  <link rel="stylesheet" href="css/footerstyle.css" />
+  <style>
+    video {
+      width: 100%;
+    }
+
+    main {
+      padding-top: 0;
+    }
+
+    .horizontalbarabovevideo {
+      width: 100%;
+      background: #a4dcb3;
+      background: linear-gradient(6deg,
           rgba(164, 220, 179, 1) 0%,
-          rgba(239, 234, 221, 1) 96%
-        );
-        display: flex;
-        justify-content: center;
-      }
+          rgba(239, 234, 221, 1) 96%);
+      display: flex;
+      justify-content: center;
+    }
 
-      .gridhero {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        width: 100%;
-      }
+    .gridhero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+      justify-items: center;
+      width: 100%;
+    }
+
+    .tintlayer {
+      background-color: rgba(236, 232, 218, 0.7);
+      width: 80%;
+      height: 40%;
+      grid-row: 1/2;
+      grid-column: 2/3;
+      border-radius: 50px;
+    }
+
+    .herobackground {
+      grid-row: 1/3;
+      grid-column: 1/3;
+    }
+
+    .herolink {
+      width: 50%;
+      grid-row: 1/2;
+      grid-column: 2/3;
+      z-index: 3;
+      font-size: xx-large;
+    }
+
+    .herolinkimg {
+      width: 100%;
+    }
+
+    .testimonialgrid {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 20vw 20vw 20vw 20vw;
+      width: 80%;
+    }
+
+    .homepagegridpic {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #firsttwocell {
+      grid-column: 1/3;
+      grid-row: 1/2;
+    }
+
+    #secondtwocell {
+      grid-column: 3/5;
+    }
+
+    
+
+    @media(max-width: 715px) {
       .tintlayer {
-        background-color: rgba(236, 232, 218, 0.7);
-        width: 80%;
-        height: 40%;
-        grid-row: 1/2;
-        grid-column: 2/3;
-        border-radius: 50px;
+        height: 70%;
       }
-      .herobackground {
-        grid-row: 1/3;
-        grid-column: 1/3;
-      }
+
       .herolink {
-        width: 50%;
-        grid-row: 1/2;
-        grid-column: 2/3;
-        z-index: 3;
-        font-size: xx-large;
+        font-size: x-large;
       }
-      .herolinkimg {
-        width: 100%;
-      }
+    }
+  </style>
+</head>
 
-      @media(max-width: 715px){
-        .tintlayer{
-          height: 70%;
-        }
-        .herolink{
-          font-size: x-large;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <div class="logoContainer">
-        <img
-          class="companylogo"
-          src="images/companylogoplaceholder.png"
-          alt="it's the picture of our companay logo, applied acceleration"
-        />
-      </div>
-      <nav>
-        <ul class="navigationbar">
-          <li class="navigationbutton">
-            <a href="index.html#" class="link">Home</a>
-          </li>
-          <li class="navigationbutton">
-            <a href="index.html#" class="link">Preparation</a>
-          </li>
-          <li class="navigationbutton">
-            <a href="htmlfiles/testlocations.html" class="link"
-              >Test Locations</a
-            >
-          </li>
-          <li class="navigationbutton">
-            <a href="htmlfiles/contact.html" class="link">Contact Us</a>
-          </li>
-          <li class="navigationbutton">
-            <a href="htmlfiles/pricing.html" class="link">Pricing</a>
-          </li>
-          <li class="navigationbutton">
-            <a href="htmlfiles/faq.html" class="link">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="contactmeans">
-        <ul class="listOfContactMeans">
-          <li class="contactbutton">
-            <a href="htmlfiles/contact.html#phone"
-              ><img src="images/phone-call.svg" alt=""
-            /></a>
-          </li>
-          <li class="contactbutton">
-            <a href="htmlfiles/contact.html#email"
-              ><img src="images/envelope.svg" alt=""
-            /></a>
-          </li>
-          <li class="contactbutton">
-            <a href="htmlfiles/contact.html#wechat"
-              ><img src="images/wechat-logo.svg" alt=""
-            /></a>
-          </li>
-          <li class="contactbutton">
-            <a href="htmlfiles/contact.html#whatsapp"
-              ><img src="images/whatsapp-logo.svg" alt=""
-            /></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main>
-      <div class="horizontalbarabovevideo">
-        <p>Bring a classmate, save $30 — bring more, save more.</p>
-      </div>
+<body>
+  <header>
+    <div class="logoContainer">
+      <img class="companylogo" src="images/companylogoplaceholder.png"
+        alt="it's the picture of our companay logo, applied acceleration" />
+    </div>
+    <nav>
+      <ul class="navigationbar">
+        <li class="navigationbutton">
+          <a href="index.html#" class="link">Home</a>
+        </li>
+        <li class="navigationbutton">
+          <a href="index.html#" class="link">Preparation</a>
+        </li>
+        <li class="navigationbutton">
+          <a href="htmlfiles/testlocations.html" class="link">Test Locations</a>
+        </li>
+        <li class="navigationbutton">
+          <a href="htmlfiles/contact.html" class="link">Contact Us</a>
+        </li>
+        <li class="navigationbutton">
+          <a href="htmlfiles/pricing.html" class="link">Pricing</a>
+        </li>
+        <li class="navigationbutton">
+          <a href="htmlfiles/faq.html" class="link">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="contactmeans">
+      <ul class="listOfContactMeans">
+        <li class="contactbutton">
+          <a href="htmlfiles/contact.html#phone"><img src="images/phone-call.svg" alt="" /></a>
+        </li>
+        <li class="contactbutton">
+          <a href="htmlfiles/contact.html#email"><img src="images/envelope.svg" alt="" /></a>
+        </li>
+        <li class="contactbutton">
+          <a href="htmlfiles/contact.html#wechat"><img src="images/wechat-logo.svg" alt="" /></a>
+        </li>
+        <li class="contactbutton">
+          <a href="htmlfiles/contact.html#whatsapp"><img src="images/whatsapp-logo.svg" alt="" /></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
 
-      <div class="gridhero">
-        <video
-          src="video/Homepageheromodified.mp4"
-          autoplay
-          muted
-          loop
-          class="herobackground"
-        ></video>
-        <div class="tintlayer"></div>
-        <a href="htmlfiles/contact.html" class="herolink">
-          contact me for more info
-        </a>
-      </div>
-      <p>video filmed around San Mateo DMV</p>
-    </main>
-    <footer>
+    <div class="horizontalbarabovevideo">
+      <p>Bring a classmate, save $30 — bring more, save more.</p>
+    </div>
+
+    <div class="gridhero">
+      <video src="video/Homepageheromodified.mp4" autoplay muted loop class="herobackground"></video>
+      <div class="tintlayer"></div>
+      <a href="htmlfiles/contact.html" class="herolink">
+        contact me for more info
+      </a>
+    </div>
+    <p>video filmed around San Mateo DMV</p>
+    <p>in the past two years, we have helped hundreds of people get their california driving licence successfully</p>
+    <p>The smiles on their faces are the best proof of our excellent service quality.</p>
+    <div class="testimonialgrid">
+      <img src="images/homepagegridpic1.jpg" alt="" class="homepagegridpic">
+      <img src="images/homepagegridpic2.jpg" alt="" class="homepagegridpic">
+      <img src="images/homepagegridpic3.jpg" alt="" class="homepagegridpic">
+      <img src="images/homepagegridpic4.jpg" alt="" class="homepagegridpic">
+      <img src="images/homepagegridpic6.jpg" alt="" class="homepagegridpic" id="firsttwocell">
+      <img src="images/homepagegridpic7.jpg" alt="" class="homepagegridpic" id="secondtwocell">
+    </div>
+
+  </main>
+  <footer>
+    <div>
+      <h1>Applied Acceleration</h1>
+      <p>where driving isn't theory, it's practice.</p>
+    </div>
+    <div>
       <div>
-        <h1>Applied Acceleration</h1>
-        <p>where driving isn't theory, it's practice.</p>
+        <h2>call or text us</h2>
+        <p>(650)346-7947</p>
       </div>
       <div>
-        <div>
-          <h2>office</h2>
-          <p>address go here</p>
-        </div>
-        <div>
-          <h2>contact us</h2>
-          <p>(650)346-7947</p>
-        </div>
+        <h2>whatsapp</h2>
+        <p> (619)248-2873</p>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
