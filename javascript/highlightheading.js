@@ -14,7 +14,7 @@ function highlightAnchor() {
       // 4. Set a timer to remove the class after 2000 milliseconds (2 seconds)
       setTimeout(function() {
         targetElement.classList.remove('active-highlight');
-      }, 2000);
+      }, 4000);
     }
   }
 }

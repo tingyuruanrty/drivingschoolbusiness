@@ -11,3 +11,22 @@ main {
 .maincontainer {
   width: 60%;
 }
+
+/* 1. Apply the animation to your active class */
+.active-highlight {
+  /* This runs our custom 'fadeHighlight' animation over 4 seconds */
+  animation: fadeHighlight 4s ease-out forwards;
+}
+
+/* 2. Define exactly how the animation behaves */
+@keyframes fadeHighlight {
+  0% {
+    background-color: #ffff99; /* Instantly turn yellow when the link is clicked */
+  }
+  75% {
+    background-color: #ffff99; /* Hold the yellow color steadily for the first 3 seconds */
+  }
+  100% {
+    background-color: transparent; /* Smoothly fade back to transparent in the final second */
+  }
+}
