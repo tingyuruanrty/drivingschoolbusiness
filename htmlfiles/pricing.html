@@ -10,13 +10,76 @@
   <link rel="stylesheet" href="../css/mainstyle.css" />
   <link rel="stylesheet" href="../css/footerstyle.css" />
   <style>
-    section {
-      margin: 20px;
+    .pricing-card {
+      width: 50vw;
+      flex: 1 1 calc(50% - 20px);
+      min-width: 300px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
     }
 
-    .reserve {
-      background-color: rgba(73, 186, 103, 0.5);
-      padding: 10px;
+    .pricing-card h2 {
+      margin-top: 0;
+      color: #2c3e50;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #27ae60;
+      margin: 15px 0;
+    }
+
+    .pricing-card ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .pricing-card li {
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+
+    .notice {
+      background-color: #e8f4fd;
+      padding: 12px;
+      border-radius: 4px;
+      font-size: 0.9em;
+      margin-bottom: 20px;
+      color: #1a5276;
+      line-height: 1.4;
+    }
+
+    .btn-book {
+      display: block;
+      text-align: center;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+      margin-top: auto;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-book:hover {
+      background-color: #2980b9;
+    }
+
+    .option-title {
+      font-weight: bold;
+      color: #333;
+      display: block;
+      margin-bottom: 4px;
     }
   </style>
 </head>
@@ -69,124 +132,76 @@
     </div>
   </header>
   <main>
-    <!-- Bay Area DMV Test Car Packages -->
-    <section>
-      <h2>Bay Area DMV Test Car Packages</h2>
-      <p><em>(Serving San Francisco • Daly City • San Jose)</em></p>
-
-      <h3>Standard Test Day Car — $235</h3>
-      <p>Perfect if you’re comfortable driving and just need a DMV-approved vehicle for the test.</p>
+    <div class="pricing-card">
+      <h2>Teens (Under 18)</h2>
+      <div class="price">Standard lesson: $160 / 2 hours</div>
       <ul>
-        <li>✔ Fully insured &amp; DMV-compliant vehicle</li>
-        <li>✔ 10-minute car orientation &amp; control check</li>
-        <li>✔ Meet directly at your DMV appointment location</li>
+        <li>Pickup & drop-off included</li>
+        <li>Lessons tailored to beginners, confidence building, or test prep</li>
       </ul>
-      <p><a href="../htmlfiles/contact.html" class="reserve">[ Reserve My Test Car ]</a></p>
+      <div class="notice">
+        <strong>Note:</strong> CA requires 6 hours (3 lessons) of professional instruction. A completion certificate is
+        provided for an additional $60.
+      </div>
+      <a href="https://calendly.com/dmvtestcarrental/dmv-driving-lesson" class="btn-book" target="_blank">📅 Book
+        Now</a>
+    </div>
 
-      <h3>Test Day Warm-Up Package — $335</h3>
+    <div class="pricing-card">
+      <h2>Adult</h2>
+      <div class="price">Standard lesson: $150 / 2 hours</div>
       <ul>
-        <li>✔ Everything in Standard Test Day Car</li>
-        <li>✔ 45-minute extra driving time on your test day to help you get familiar with the car and local streets</li>
-        <li>✔ Route familiarization &amp; helpful reminders (no formal driving instruction provided)</li>
+        <li>Pickup & drop-off included</li>
+        <li>Lessons tailored to beginners, confidence building, or test prep</li>
       </ul>
-      <p><a href="../htmlfiles/contact.html" class="reserve">[ Reserve My Test Car ]</a></p>
-    </section>
+      <a href="https://calendly.com/dmvtestcarrental/dmv-driving-lesson" class="btn-book" target="_blank">📅 Book
+        Now</a>
+    </div>
 
-    <!-- How It Works -->
-    <section>
-      <h2>🚗 How It Works</h2>
-      <ol>
-        <li><strong>Choose Your Package</strong><br>
-          Select the option that best fits your needs.
+    <div class="pricing-card">
+      <h2>Drivers with a Foreign Driver’s License</h2>
+      <p>Based on your experience and confidence level, I offer 4 options. Please tell me which option you prefer:</p>
+      <ul>
+        <li>
+          <span class="option-title">Option 1 – Regular Lesson First: $150 / 2 hours</span>
+          Pickup & drop-off included. After the lesson, you can decide whether you need test-day support. If you feel
+          confident and have someone to accompany you, you can take the test on your own.
         </li>
-        <li><strong>Book Online</strong><br>
-          Pick your DMV location, date, and time using our secure booking system.
+        <li>
+          <span class="option-title">Option 2 – Test-Day Vehicle + DMV Check-In Support: $200</span>
+          One-time service. If you prefer not to trouble friends or family.
         </li>
-        <li><strong>Meet at the DMV</strong><br>
-          Arrive early to meet us before your scheduled test:
-          <ul>
-            <li><em>Standard Test Day Car:</em> Meet 15 minutes before for vehicle orientation &amp; DMV check-in.</li>
-            <li><em>Test Day Warm-Up Package:</em> Meet 1 hour before for a short driving warm-up, then orientation
-              &amp; DMV check-in.</li>
-          </ul>
+        <li>
+          <span class="option-title">Option 3 – Test-Day Vehicle + DMV Check-In Support + 1-Hour Practice: $260</span>
+          Quick review before the road test.
         </li>
-        <li><strong>Take Your Test</strong><br>
-          Drive with confidence in our fully insured, DMV-approved vehicle.
+        <li>
+          <span class="option-title">Option 4 – Test-Day Vehicle + DMV Check-In Support + 2-Hour Practice: $320</span>
+          More practice before the road test.
         </li>
-      </ol>
-    </section>
+      </ul>
+      <div class="notice">
+        <strong>Important:</strong> Test-day services do not include pickup or drop-off.
+      </div>
+      <a href="https://calendly.com/dmvtestcarrental/dmv-driving-lesson" class="btn-book" target="_blank">📅 Book
+        Now</a>
+    </div>
 
-    <!-- Booking Requirements -->
-    <section>
-      <h2>Booking Requirements</h2>
-      <ol>
-        <li>A confirmed DMV appointment is required.</li>
-        <li>You must bring a valid California learner’s permit (out-of-state permits must be transferred first).</li>
-        <li>If booking online is difficult, our team may assist you step by step.</li>
-      </ol>
+    <div class="pricing-card">
+      <h2>Refresher / Highway Lesson</h2>
 
-      <ol start="4">
-        <li>If your DMV location is not listed, please contact us. We may still be able to arrange service for nearby
-          areas.</li>
-        <li>Need help booking at one of these locations? Our team can guide you through the DMV appointment process.
-        </li>
-        <li>We regularly serve the Bay Area and can discuss special arrangements outside these listed locations.</li>
-      </ol>
-    </section>
+      <div class="price">Standard Refresher Lesson: $150 / 2 hours</div>
+      <p>For general driving practice, confidence building, parking, city driving, or DMV test prep.</p>
 
-    <!-- Package Comparison -->
-    <section>
-      <h2>Which Package Should I Choose?</h2>
-      <p>Not sure which option is right for you? Here’s a quick comparison:</p>
+      <hr style="border: 0; border-top: 1px solid #ddd; margin: 15px 0;">
 
-      <table border="1" cellpadding="8" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Package</th>
-            <th>Standard Test Day Car</th>
-            <th>Test Day Warm-Up Package</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Best for</strong></td>
-            <td>Drivers who regularly drive in California and feel confident with DMV rules</td>
-            <td>Drivers who haven’t practiced for months, or are less confident with California rules</td>
-          </tr>
-          <tr>
-            <td><strong>Typical Situation</strong></td>
-            <td>
-              <ul>
-                <li>Familiar with road signs and DMV test process</li>
-                <li>Only need a test-ready car and insurance</li>
-                <li>Just want a quick 15-min DMV orientation</li>
-              </ul>
-            </td>
-            <td>
-              <ul>
-                <li>Haven’t driven in several months</li>
-                <li>Drove in another country but not used to CA rules</li>
-                <li>Unfamiliar with 4-way stops, yielding, or lane choices</li>
-                <li>Nervous about driving a new car and need practice</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td><strong>What’s Included</strong></td>
-            <td>Test-ready vehicle + insurance + short DMV location orientation</td>
-            <td>Test-ready vehicle + extra time in the car to get comfortable and confident before your test</td>
-          </tr>
-          <tr>
-            <td><strong>Recommendation</strong></td>
-            <td>Confident and experienced CA drivers</td>
-            <td>First-time CA testers or drivers who prefer more support on test day</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="price">Highway-Focused Lesson: $170 / 90 minutes</div>
+      <p>Designed specifically for highway practice, including merging, lane changes, speed control, and building
+        confidence in faster traffic.</p>
 
-      <p><em>Still have questions? We’re happy to help. Reach out anytime if you need more details about booking or our
-          services.</em></p>
-    </section>
+      <a href="https://calendly.com/dmvtestcarrental/dmv-driving-lesson" class="btn-book" target="_blank">📅 Book
+        Now</a>
+    </div>
   </main>
 
   <footer>
