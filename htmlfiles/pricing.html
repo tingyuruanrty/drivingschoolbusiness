@@ -83,95 +83,107 @@
     }
 
     /* Base styles (matches your pricing page) */
-  .info-container {
-    font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    color: #333;
-  }
-  .section-header {
-    text-align: center;
-    color: #2c3e50;
-    margin-bottom: 30px;
-    font-size: 2em;
-  }
-  .section-header span {
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 10px;
-  }
+    .info-container {
+      font-family: Arial, sans-serif;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+      color: #333;
+    }
 
-  /* How It Works Grid */
-  .steps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-bottom: 60px;
-  }
-  .step-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    position: relative;
-  }
-  .step-number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 36px;
-    height: 36px;
-    background-color: #3498db;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  .step-title {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 10px;
-  }
-  .step-card ul {
-    padding-left: 20px;
-    margin: 10px 0 0 0;
-  }
-  .step-card p {
-    line-height: 1.5;
-    margin: 0;
-  }
-  .step-note {
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #e74c3c; /* Red text to highlight important test-day info */
-    font-weight: bold;
-  }
+    .section-header {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+      font-size: 2em;
+    }
 
-  /* Booking Requirements Grid */
-  .req-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  .req-card {
-    background-color: #e8f4fd;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #3498db;
-  }
-  .req-title {
-    font-weight: bold;
-    color: #1a5276;
-    margin-bottom: 8px;
-    font-size: 1.1em;
-  }
-  .req-card p {
-    margin: 0;
-    line-height: 1.5;
-  }
+    .section-header span {
+      border-bottom: 3px solid #3498db;
+      padding-bottom: 10px;
+    }
+
+    /* How It Works Grid */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .step-card {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .step-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 36px;
+      height: 36px;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .step-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .step-card ul {
+      padding-left: 20px;
+      margin: 10px 0 0 0;
+    }
+
+    .step-card p {
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .step-note {
+      margin-top: 10px;
+      font-size: 0.9em;
+      color: #e74c3c;
+      /* Red text to highlight important test-day info */
+      font-weight: bold;
+    }
+
+    /* Booking Requirements Grid */
+    .req-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .req-card {
+      background-color: #e8f4fd;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #3498db;
+    }
+
+    .req-title {
+      font-weight: bold;
+      color: #1a5276;
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+
+    .req-card p {
+      margin: 0;
+      line-height: 1.5;
+    }
   </style>
 </head>
 
@@ -297,83 +309,87 @@
 
   <div class="info-container">
 
-  <h2 class="section-header"><span>How It Works</span></h2>
-  
-  <div class="steps-grid">
-    <div class="step-card">
-      <div class="step-number">1</div>
-      <div class="step-title">Choose a Service</div>
-      <p>Pick the lesson or test-day option that fits your needs.</p>
+    <h2 class="section-header"><span>How It Works</span></h2>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div class="step-title">Choose a Service</div>
+        <p>Pick the lesson or test-day option that fits your needs.</p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div class="step-title">Book Online</div>
+        <p>Choose an available time.</p>
+        <p><em>For test-day service, please book your DMV test first.</em></p>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div class="step-title">Send Details</div>
+        <p>After booking, please send:</p>
+        <ul>
+          <li>Pickup address for lessons</li>
+          <li>DMV location for test-day service</li>
+        </ul>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">4</div>
+        <div class="step-title">Meet Up</div>
+        <p><strong>Regular Lessons</strong> include pickup and drop-off. For returning lesson students, test-day pickup
+          may be available at no extra charge. Drop-off after the test is generally not included.</p>
+        <div class="step-note">Test-day service meets at the DMV only. No pickup or drop-off is included.</div>
+      </div>
+
+      <div class="step-card">
+        <div class="step-number">5</div>
+        <div class="step-title">Practice with Confidence</div>
+        <p>We focus on safe driving, parking, highway driving, confidence building, and DMV test prep.</p>
+      </div>
     </div>
 
-    <div class="step-card">
-      <div class="step-number">2</div>
-      <div class="step-title">Book Online</div>
-      <p>Choose an available time.</p>
-      <p><em>For test-day service, please book your DMV test first.</em></p>
+    <br><br>
+
+    <h2 class="section-header"><span>Booking Requirements</span></h2>
+
+    <div class="req-grid">
+      <div class="req-card">
+        <div class="req-title">1. Permit Required</div>
+        <p>A valid California learner’s permit is required for all driving lessons.</p>
+      </div>
+
+      <div class="req-card">
+        <div class="req-title">2. Test-Day Service</div>
+        <p>Please book your DMV road test appointment before booking test-day service with us.</p>
+      </div>
+
+      <div class="req-card">
+        <div class="req-title">3. Not Sure Which DMV?</div>
+        <p>You can take a regular lesson first. We can suggest suitable DMV locations based on your driving level and
+          area.</p>
+      </div>
+
+      <div class="req-card">
+        <div class="req-title">4. Need Help Booking?</div>
+        <p>If online booking is difficult, we can guide you step by step or book it for you. Call or text us anytime.
+        </p>
+      </div>
+
+      <div class="req-card">
+        <div class="req-title">5. Location Not Listed?</div>
+        <p>If your DMV location is not listed, please contact us. We may still be able to arrange service in nearby
+          areas.</p>
+      </div>
     </div>
 
-    <div class="step-card">
-      <div class="step-number">3</div>
-      <div class="step-title">Send Details</div>
-      <p>After booking, please send:</p>
-      <ul>
-        <li>Pickup address for lessons</li>
-        <li>DMV location for test-day service</li>
-      </ul>
-    </div>
-
-    <div class="step-card">
-      <div class="step-number">4</div>
-      <div class="step-title">Meet Up</div>
-      <p><strong>Regular Lessons</strong> include pickup and drop-off. For returning lesson students, test-day pickup may be available at no extra charge. Drop-off after the test is generally not included.</p>
-      <div class="step-note">Test-day service meets at the DMV only. No pickup or drop-off is included.</div>
-    </div>
-
-    <div class="step-card">
-      <div class="step-number">5</div>
-      <div class="step-title">Practice with Confidence</div>
-      <p>We focus on safe driving, parking, highway driving, confidence building, and DMV test prep.</p>
-    </div>
   </div>
-
-  <br><br>
-
-  <h2 class="section-header"><span>Booking Requirements</span></h2>
-
-  <div class="req-grid">
-    <div class="req-card">
-      <div class="req-title">1. Permit Required</div>
-      <p>A valid California learner’s permit is required for all driving lessons.</p>
-    </div>
-
-    <div class="req-card">
-      <div class="req-title">2. Test-Day Service</div>
-      <p>Please book your DMV road test appointment before booking test-day service with us.</p>
-    </div>
-
-    <div class="req-card">
-      <div class="req-title">3. Not Sure Which DMV?</div>
-      <p>You can take a regular lesson first. We can suggest suitable DMV locations based on your driving level and area.</p>
-    </div>
-
-    <div class="req-card">
-      <div class="req-title">4. Need Help Booking?</div>
-      <p>If online booking is difficult, we can guide you step by step or book it for you. Call or text us anytime.</p>
-    </div>
-
-    <div class="req-card">
-      <div class="req-title">5. Location Not Listed?</div>
-      <p>If your DMV location is not listed, please contact us. We may still be able to arrange service in nearby areas.</p>
-    </div>
-  </div>
-
-</div>
 
   <footer>
     <div>
-      <h1>Applied Acceleration</h1>
-      <p>where driving isn't theory, it's practice.</p>
+      <h1>Bay Area DMV Test Car Service</h1>
+      <p>Driving lessons & DMV test-day car support in San Mateo and the Bay Area.</p>
     </div>
     <div>
       <div>
